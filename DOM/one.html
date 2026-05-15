@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Create a new paragraph element
+const newPara = document.createElement("p");
+newPara.textContent = "This is new text.";
+
+// Find the parent element and append the new element
+document.getElementById("container").appendChild(newPara);
+
+
+// Select the element to edit
+const element = document.getElementById("myElement");
+
+// Change its text content and style
+element.textContent = "Updated Content";
+element.style.color = "blue";
+
+
+// Remove an element directly
+const elementToRemove = document.getElementById("itemToDelete");
+elementToRemove.remove();
+
+
+</script>
+</html>
